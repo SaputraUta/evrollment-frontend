@@ -21,6 +21,7 @@ struct RegisterView: View {
             TextField("Email", text: $email)
                 .textContentType(.emailAddress)
                 .keyboardType(.emailAddress)
+                .autocapitalization(.none)
                 .padding()
                 .background(Color(.systemGray6))
                 .cornerRadius(10)

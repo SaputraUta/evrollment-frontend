@@ -6,13 +6,12 @@
 //
 
 struct User: Codable {
-    let id: Int?
-    let email: String
-    let role: String?
+    var email: String
+    var role: String?
 }
 
 struct LoginResponse: Codable {
-    let token: String
+    let token: String?
     let message: String?
 }
 
